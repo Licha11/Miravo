@@ -1,4 +1,9 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/* la clase "margin-navbar-fijo" se agrego para que el navbar fijo no tape el texto del main */
+.margin-navbar-fijo {
+  margin-top: 90px;
 }
