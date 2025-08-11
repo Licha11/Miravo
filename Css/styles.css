@@ -3,11 +3,6 @@
   padding: 0%;
 }
 
-/* la clase "margin-navbar-fijo" se agrego para que el navbar fijo no tape el texto del main */
-.margin-navbar-fijo {
-  margin-top: 90px;
-}
-
 .Nav-items-g {
   color: rgb(255, 255, 255);
   font-weight: bold;
@@ -21,5 +16,20 @@
 }
 
 .bg-nav {
-  background: linear-gradient(to right, black, red);
+  background: linear-gradient(to right, black 0%, black 40%, red 100%);
+}
+
+/* media para que el navbar quede fijo solo en dispositivos grandes */
+
+@media (min-width: 992px) {
+  .navbar-fijo-lg {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030; 
+  }
+
+  body {
+    margin-top: 90px;
+  }
 }
