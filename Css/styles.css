@@ -7,3 +7,19 @@
 .margin-navbar-fijo {
   margin-top: 90px;
 }
+
+.Nav-items-g {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Nav-items:hover {
+  color: rgb(255, 255, 255);
+  transform: scale(1.5);
+  font-weight: bold;
+}
+
+.bg-nav {
+  background: linear-gradient(to right, black, red);
+}
