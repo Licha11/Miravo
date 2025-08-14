@@ -68,9 +68,6 @@
               <li class="nav-item px-2">
                 <a class="nav-link active" aria-current="page" href="./login.html">Login</a>
               </li>
-              <li class="nav-item px-2">
-                <a class="nav-link" href="./suscripcion.html">Suscribite</a>
-              </li>
             </ul>
           </div>
         </div>
@@ -78,7 +75,27 @@
     </header>
 <!-- la clase "margin-navbar-fijo" se agrego para que el navbar fijo no tape el texto del main -->
     <main class="margin-navbar-fijo">
-      <p>MESSI</p>
+      <section class="IniciarSesion">
+    <div class="Inicio-box">
+    <h2 class="text-center mb-4"><i class="bi bi-person-circle"> Iniciar Sesión</i></h2>
+    <form>
+      <div class="mb-3">
+        <label for="email" class="form-label"><i class="bi bi-envelope"> Correo Electronico</i></label>
+        <input type="email" class="form-control" id="email" placeholder="Ingrese su Email" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label"><i class="bi bi-lock"> Contraseña</i></label>
+        <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="recordar">
+        <label class="form-check-label" for="recordar">Recordarme</label>
+      </div>
+      <button type="submit" class="btn entrar fw-bold w-100">Entrar</button>
+      <p class="text-center mt-3 form-text">¿No tienes cuenta? <a href="#" class="text-decoration-none text-danger subrayado">Subscribete ahora</a></p>
+    </form>
+  </div>
+   </section>
     </main>
     <footer></footer>
     <script
