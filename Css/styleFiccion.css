@@ -44,3 +44,18 @@ a {
   background-color: rgba(0, 0, 0, 0.949);
   border-radius: 10px;
 }
+/* estilos de cards */
+.cardimg {
+  width: 230px;
+  height: 300px;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  background-size: cover;
+  background-position: center;
+  transition: 300ms;
+  &:hover {
+    transform: scale(1.1);
+    transition: 300ms;
+    cursor: pointer;
+  }
+}
