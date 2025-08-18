@@ -59,3 +59,33 @@ a {
     cursor: pointer;
   }
 }
+.cardimg1 {
+  background-image: url(../Img/imgFiccion/jurassic-world-el-renacer-poster-686513d951783.avif);
+}
+.cardimg2 {
+  background-image: url(../Img/imgFiccion/americafrente.jfif);
+}
+.cardimg3 {
+  background-image: url(../Img/imgFiccion/imgsuper2025._747x420.jpeg);
+}
+.cardimg4 {
+  background-image: url(../Img/imgFiccion/inter.jpg);
+}
+.cardimg5 {
+  background-image: url(../Img/imgFiccion/AVATAR.jpg);
+}
+.cardimg6 {
+  background-image: url(../Img/imgFiccion/batvssuper.jpg);
+}
+.cardimg7 {
+  background-image: url(../Img/imgFiccion/La_guerra_de_los_mundos-690983782-large.jpg);
+}
+.cardimg8 {
+  background-image: url(../Img/imgFiccion/VanHelsing_2004_teaser_original_film_art_5000x.webp);
+}
+.cardimg9 {
+  background-image: url(../Img/imgFiccion/st25.jpeg);
+}
+.cardimg10 {
+  background-image: url(../Img/imgFiccion/POSTER.jpg);
+}
