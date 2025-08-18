@@ -89,3 +89,44 @@ a {
 .cardimg10 {
   background-image: url(../Img/imgFiccion/POSTER.jpg);
 }
+.cardbtn {
+  position: relative;
+}
+/* btn-me gusta */
+.cardbtn2 {
+  position: absolute;
+  font-size: 20px;
+  top: 235px;
+  left: 175px;
+}
+/* caja ver/desc */
+.cardbtn3 {
+  width: 102px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.61);
+  box-shadow: 2px 3px 5px gray;
+}
+.ver {
+  position: absolute;
+  top: 230px;
+  left: 10px;
+  text-align: center;
+  transition: 800ms;
+}
+.descargar {
+  position: absolute;
+  top: 263px;
+  left: 10px;
+  text-align: center;
+}
+.ver:hover {
+  background-color: rgba(30, 61, 237, 0.74);
+  transition: 800ms;
+  cursor: pointer;
+}
+.descargar:hover {
+  background-color: rgba(0, 128, 0, 0.826);
+  transition: 800ms;
+  cursor: pointer;
+}
