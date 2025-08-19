@@ -3,6 +3,21 @@
   padding: 0%;
 }
 
+/* footer abajo */
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main{
+  flex-grow: 1;
+  background-color: black;
+}
+
+/* fin footer abajo */
+
 .Nav-items-g {
   color: rgb(255, 255, 255);
   font-weight: bold;
@@ -92,3 +107,13 @@
 }
 
 /* TERMINA EL LOGIN */
+
+/* footer */
+
+.logoFooter{
+  width: 13%;
+}
+
+.footerBg{
+  background-color: black;
+}
