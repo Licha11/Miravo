@@ -19,10 +19,6 @@ a {
   background-color: rgba(0, 0, 0, 0.56);
   border-radius: 15px;
 }
-.imgCarousel {
-  width: auto;
-  height: 150px;
-}
 .btn {
   background: linear-gradient(0deg, red 0%, black 100%);
   color: red;
@@ -129,4 +125,7 @@ a {
   background-color: rgba(0, 128, 0, 0.826);
   transition: 800ms;
   cursor: pointer;
+}
+.difu{
+  mask-image: linear-gradient( black 80%, transparent);
 }
