@@ -84,10 +84,83 @@
       </nav>
     </header>
 
-<main>
-      <p>MESSI</p>
+    <main class="margin-navbar-fijo footerBg">
+              <section class="container-fluid botonConsulta my-5 py-3">
+          <h1 class="text-center display-2">Contáctanos</h1>
+        </section>
+      <section class="container ">
+        <article class="row">
+          <div class="col-12 col-md-6 rounded-3 my-5">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="from-label fw-bold"
+                  >Nombre y apellido *</label
+                >
+                <input
+                  type="text"
+                  class="from-control w-100 rounded-3 bg-light"
+                  id="nombre"
+                  placeholder=" Ingrese su nombre"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="from-label fw-bold"
+                  > Correo electrónico *</label
+                >
+                <input
+                  type="email"
+                  class="from-control w-100 rounded-3 bg-light"
+                  id="email"
+                  placeholder=" Ingresa su correo electrónico"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="from-label fw-bold"
+                  >Número de teléfono</label
+                >
+                <input
+                  type="phone"
+                  class="from-control w-100 rounded-3 bg-light"
+                  id="phone"
+                  placeholder=" Ingresa su número telefónico"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="Mensaje" class="from-label fw-bold"
+                  >Consulta *</label
+                >
+                <textarea
+                  class="form-control rounded-3 bg-light"
+                  id="Mensaje"
+                  rows="4"
+                  maxlength="300"
+                  placeholder="Ingrese su mensaje."
+                >
+Ingresa su consulta hasta 300 caracteres</textarea
+                >
+                <p class="my-3">Los campos con (*) son obligatorios</p>
+                <div class="btn botonConsulta">Enviar consulta</div>
+              </div>
+            </form>
+          </div>
+          <div
+            class="my-3 col-12 col-md-6 alert alert-primary-subtle"
+            role="alert"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1060679495004!2d-65.20974192528031!3d-26.836578490025712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1752457232924!5m2!1ses-419!2sar"
+              class="w-100"
+              height="450"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </article>
+      </section>
     </main>
-
      <footer class="footerBg py-3">
       <div class="container">
         <div class="row d-flex justify-content-center">
