@@ -47,6 +47,9 @@ main{
   body {
     margin-top: 90px;
   }
+    .error404{
+    width: 75% !important;
+  }
 }
 
 
@@ -111,9 +114,22 @@ main{
 /* footer */
 
 .logoFooter{
-  width: 13%;
+  width: 15%;
 }
 
 .footerBg{
   background-color: black;
 }
+/* termino footer */
+
+/* boton volver a l inicio */
+.boton404{
+  background-color: rgba(156, 0, 0, 0.877);
+  color: white;
+}
+.boton404:hover{
+  background-color: rgba(156, 0, 0, 0.877); 
+  color: white;
+
+}
+/* fin */
