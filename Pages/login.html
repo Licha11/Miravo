@@ -59,23 +59,11 @@
               </button>
             </form>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item px-3">
-                <a class="nav-link Nav-items Nav-items" href="../index.html"
-                  ><i class="bi bi-house-door-fill me-2"></i>Inicio</a
-                >
+              <li class="nav-item px-2">
+                <a class="nav-link" href="../index.html">Inicio</a>
               </li>
-              <li class="nav-item px-3">
-                <a
-                  class="nav-link Nav-items Nav-items-g"
-                  aria-current="page"
-                  href="/Pages/login.html"
-                  ><i class="bi bi-box-arrow-in-right me-2"></i>Login</a
-                >
-              </li>
-              <li class="nav-item px-3">
-                <a class="nav-link Nav-items" href="/Pages/suscripcion.html"
-                  ><i class="bi bi-plus-circle-fill me-2"></i>Suscribite</a
-                >
+              <li class="nav-item px-2">
+                <a class="nav-link active" aria-current="page" href="./login.html">Login</a>
               </li>
             </ul>
           </div>
@@ -85,51 +73,26 @@
 
     <main>
       <section class="IniciarSesion">
-        <div class="Inicio-box">
-          <h2 class="text-center mb-4">
-            <i class="bi bi-person-circle"> Iniciar Sesión</i>
-          </h2>
-          <form>
-            <div class="mb-3">
-              <label for="email" class="form-label"
-                ><i class="bi bi-envelope"> Correo Electronico</i></label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="Ingrese su e-mail"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="password" class="form-label"
-                ><i class="bi bi-lock"> Contraseña</i></label
-              >
-              <input
-                type="password"
-                class="form-control"
-                id="password"
-                placeholder="Ingrese su contraseña"
-                required
-              />
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="recordar" />
-              <label class="form-check-label" for="recordar">Recordarme</label>
-            </div>
-            <button type="submit" class="btn entrar fw-bold w-100">
-              Entrar
-            </button>
-            <p class="text-center mt-3 form-text">
-              ¿No tienes cuenta?
-              <a href="#" class="text-decoration-none text-danger subrayado"
-                >Subscribete ahora</a
-              >
-            </p>
-          </form>
-        </div>
-      </section>
+    <div class="Inicio-box">
+    <h2 class="text-center mb-4"><i class="bi bi-person-circle"> Iniciar Sesión</i></h2>
+    <form>
+      <div class="mb-3">
+        <label for="email" class="form-label"><i class="bi bi-envelope"> Correo Electronico</i></label>
+        <input type="email" class="form-control" id="email" placeholder="Ingrese su Email" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label"><i class="bi bi-lock"> Contraseña</i></label>
+        <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="recordar">
+        <label class="form-check-label" for="recordar">Recordarme</label>
+      </div>
+      <button type="submit" class="btn entrar fw-bold w-100">Entrar</button>
+      <p class="text-center mt-3 form-text">¿No tienes cuenta? <a href="/Pages/suscripcion.html" class="text-decoration-none text-danger subrayado">Subscribete ahora</a></p>
+    </form>
+  </div>
+   </section>
     </main>
 
     <footer></footer>
