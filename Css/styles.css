@@ -207,3 +207,51 @@
       max-width: 700px;
       z-index: 2;
     }
+
+     .Reproducir {
+      background-color: #e50914;
+      border: none;
+      transition: 0.3s;
+    }
+    .Reproducir:hover {
+      background-color: #f40612;
+      transform: scale(1.05);
+    }
+    .miLista {
+      transition: 0.3s;
+    }
+    .miLista:hover {
+      background-color: darkgray;
+      transform: scale(1.05);
+    }
+    .relacionadas img {
+      transition: transform 0.3s ease;
+      border-radius: 6px;
+    }
+    .relacionadas img:hover {
+      transform: scale(1.05);
+    }
+     .Reproducir {
+      background-color: #e50914;
+      border: none;
+      transition: 0.3s;
+    }
+    .Reproducir:hover {
+      background-color: #f40612;
+      transform: scale(1.05);
+    }
+    .miLista {
+      transition: 0.3s;
+    }
+    .miLista:hover {
+      background-color: darkgray;
+      transform: scale(1.05);
+    }
+    .relacionadas img {
+      transition: transform 0.3s ease;
+      border-radius: 6px;
+    }
+    .relacionadas img:hover {
+      transform: scale(1.05);
+    }
+/* TERMINA DETALLE DE PELICULA */
