@@ -240,3 +240,52 @@ main{
   color: white;
 }
 /* fin error 404 */
+
+/* pagina acerca de nosotro */
+
+.fondo1{
+ background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #8B0000 100%);;
+  color: #f8f9fa;
+}
+
+.fondo2{
+ background: linear-gradient(135deg, #8B0000  0%, #1a1a1a 50%,  #000000  100%);;
+  color: #f8f9fa;
+}
+
+.quienesSomos {
+  position: relative;
+  padding: 80px 0;
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  color: #f8f9fa;
+  overflow: hidden;
+}
+
+.quienesSomos {
+  position: relative;
+  padding: 80px 0;
+  background: radial-gradient(circle at center, #1a1a1a 0%, #000 100%);
+  overflow: hidden;
+  color: #f8f9fa;
+}
+
+.quienesSomos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #8B0000 15%, transparent 50%, #8B0000 75%);
+  background-size: 200% 100%;
+  animation: curtains 8s ease-in-out infinite alternate;
+  opacity: 1.0.;
+
+}
+
+@keyframes curtains {
+  from { background-position: 0 0; }
+  to   { background-position: 100% 0; }
+}
+.quienesSomos * {
+  position: relative;
+  z-index: 1;
+}
+ /* fin de pagina acerca de nos */
