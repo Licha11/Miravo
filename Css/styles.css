@@ -173,3 +173,37 @@
     box-shadow: none;
 }
 /* TERMINA SUSCRIPCION */
+
+
+/* INICIO DE DETALLE DE PELICULA */
+
+.peliculaPrincipal {
+      position: relative;
+      height: 70vh;
+      display: flex;
+      align-items: flex-end;
+      padding: 2rem;
+      overflow: hidden;
+    }
+    .peliculaPrincipal img,
+    .peliculaPrincipal video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+    .peliculaPrincipal::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(20,20,20,1), rgba(20,20,20,0.3));
+      z-index: 1;
+    }
+    .peliculaPrincipal-content {
+      position: relative;
+      max-width: 700px;
+      z-index: 2;
+    }
