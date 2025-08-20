@@ -220,3 +220,23 @@ main{
     box-shadow: none;
 }
 /* TERMINA SUSCRIPCION */
+
+/* pagina error404 */
+@media (width >= 991px){
+  .error404{
+    width: 75% !important;
+  }
+  
+} 
+
+
+
+.boton404{
+  background-color: rgba(156, 0, 0, 0.877);
+  color: white;
+}
+.boton404:hover{
+  background-color: rgba(156, 0, 0, 0.877); 
+  color: white;
+}
+/* fin error 404 */
