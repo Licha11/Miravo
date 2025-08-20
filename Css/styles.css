@@ -289,3 +289,14 @@ main{
   z-index: 1;
 }
  /* fin de pagina acerca de nos */
+
+/* pagina contacto */
+
+ .contactanosBg{
+  background-color: #8B0000 ;
+ }
+
+ .botonConsulta{
+  background-color: rgba(156, 0, 0, 0.877);
+}
+/* fin pagina de contacto */
