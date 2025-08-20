@@ -24,9 +24,9 @@
     />
     <link rel="stylesheet" href="../Css/styles.css" />
   </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-nav d-flex navbar-fijo-lg">
+  <body class="fondoPlan">
+  <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html"
             ><img
@@ -73,19 +73,240 @@
                   ><i class="bi bi-box-arrow-in-right me-2"></i>Login</a
                 >
               </li>
-              <li class="nav-item px-3">
-                <a class="nav-link Nav-items Nav-items-g" href="/Pages/suscripcion.html"
-                  ><i class="bi bi-plus-circle-fill me-2"></i>Suscribite</a
-                >
-              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
 
-<main>
-      <p>MESSI</p>
+<!-- la clase "margin-navbar-fijo" se agrego para que el navbar fijo no tape el texto del main -->
+    <main class="margin-navbar-fijo">
+      <section class="pt-5 pb-4 seriesPlanes">
+        <div class="container text-center">
+    <h1 class="mb-4 fw-bold display-5">ELIGE EL MEJOR PLAN PARA TI</h1>
+    <div class="row g-4">
+      <article class="col-12 col-md-6 col-lg-4 d-flex"> 
+        <div class="planesCards w-100">
+          <div>
+            <h5 class="text-start fw-bold mb-3">Básico con Anuncios</h5>
+            <ul class="list-unstyled text-start mb-4">
+              <li><span class="fw-bold"><i class="bi bi-patch-check">2 Dispositivos</i></span> a la vez</li>
+              <li><span class="fw-bold"><i class="bi bi-tv">Resolucion HD</i></span></li>
+            </ul>
+            <p class="text-start fw-bold fs-3">$49.590 <span class="fs-6 fw-normal">/año</span></p>
+          </div>
+          <div>
+            <button class="btn botonPlan w-100 mb-3" data-bs-toggle="modal" data-bs-target="#modalBasico">
+  ELIGE ESTE PLAN
+</button>
+            <p class="text-light m-0">O paga <span class="fw-bold">$5.690</span>/mes</p>
+          </div>
+          <div class="modal fade" id="modalBasico" tabindex="-1" aria-labelledby="modalBasicoLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content contenidoModal bg-dark text-white">
+      <div class="modal-header border-secondary">
+        <h5 class="modal-title" id="modalBasicoLabel">Básico con Anuncios - $49.590/año</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control bg-dark text-white border-secondary">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Apellido</label>
+            <input type="text" class="form-control bg-dark text-white border-secondary">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control bg-dark text-white border-secondary">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Código Postal</label>
+            <input type="text" class="form-control bg-dark text-white border-secondary">
+          </div>
+          <div class="mb-3">
+            <label for="tipoTarjeta" class="form-label">Tipo de Tarjeta</label>
+            <select class="form-select" id="tipoTarjeta" required>
+              <option value="" selected disabled>Selecciona una opción</option>
+              <option value="credito">Tarjeta de Crédito</option>
+              <option value="debito">Tarjeta de Débito</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="numeroTarjeta" class="form-label">Número de Tarjeta</label>
+            <input type="text" class="form-control" id="numeroTarjeta" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" required>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="fechaExp" class="form-label">Fecha de Expiración</label>
+              <input type="month" class="form-control" id="fechaExp" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cvv" placeholder="XXX" maxlength="3" required>
+            </div>
+          </div>
+          <button type="submit" class="btn w-100 fw-bold botonSubscribirse">Suscribirse</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </article>
+      <article class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="planesCards w-100">
+          <div>
+            <h5 class="text-start mb-3 fw-bold">Estándar</h5>
+            <ul class="list-unstyled text-start mb-4">
+              <li><span class="fw-bold"><i class="bi bi-patch-check">4 dispositivos</i></span> a la vez</li>
+              <li><span class="fw-bold"><i class="bi bi-tv">Resolucion Full HD</i></span></li>
+              <li><span class="fw-bold"><i class="bi bi-speaker">Audio Dolby Digital</i></span></li>
+              <li><span class="fw-bold"><i class="bi bi-download"> 40 descargas <span>para disfrutar offline</span></i></li>
+            </ul>
+            <p class="text-start fw-bold fs-3">$61.290 <span class="fs-6 fw-normal">/año</span></p>
+          </div>
+          <div>
+            <button class="btn botonPlan w-100 mb-3" data-bs-toggle="modal" data-bs-target="#modalEstandar">
+  ELIGE ESTE PLAN
+</button>
+            <p class="text-light m-0">O paga <span class="fw-bold">$7.290</span>/mes</p>
+          </div>
+          <div class="modal fade" id="modalEstandar" tabindex="-1" aria-labelledby="modalEstandarLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content contenidoModal bg-dark text-white">
+      <div class="modal-header border-secondary">
+        <h5 class="modal-title" id="modalEstandarLabel">Estandar - $61.120/año</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control bg-dark text-white border-secondary">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Apellido</label>
+            <input type="text" class="form-control bg-dark text-white border-secondary">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control bg-dark text-white border-secondary">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Código Postal</label>
+            <input type="text" class="form-control bg-dark text-white border-secondary">
+          </div>
+          <div class="mb-3">
+            <label for="tipoTarjeta" class="form-label">Tipo de Tarjeta</label>
+            <select class="form-select" id="tipoTarjeta" required>
+              <option value="" selected disabled>Selecciona una opción</option>
+              <option value="credito">Tarjeta de Crédito</option>
+              <option value="debito">Tarjeta de Débito</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="numeroTarjeta" class="form-label">Número de Tarjeta</label>
+            <input type="number" class="form-control" id="numeroTarjeta" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" required>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="fechaExp" class="form-label">Fecha de Expiración</label>
+              <input type="month" class="form-control" id="fechaExp" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cvv" placeholder="XXX" maxlength="3" required>
+            </div>
+          </div>
+          <button type="submit" class="btn botonSubscribirse w-100 fw-bold">Suscribirse</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </article>
+      <article class="col-12 col-md-12 col-lg-4 d-flex"><div class="planesCards w-100">
+          <div>
+            <h5 class="text-start mb-3 fw-bold">Platino</h5>
+            <ul class="list-unstyled text-start mb-4">
+              <li><span class="fw-bold"><i class="bi bi-patch-check">6 dispositivos</i></span> a la vez</li>
+              <li><span class="fw-bold"><i class="bi bi-tv">Resolucion 4K Ultra HD</i></span></li>
+              <li><span class="fw-bold"><i class="bi bi-speaker">Audio Dolby Atmos</i></span></li>
+              <li><span class="fw-bold"><i class="bi bi-download"> 100 descargas <span>para disfrutar offline</span></i></li>
+            </ul>
+            <p class="text-start fw-bold fs-3">$72.890 <span class="fs-6 fw-normal">/año</span></p>
+          </div>
+          <div>
+           <button class="btn botonPlan w-100 mb-3" data-bs-toggle="modal" data-bs-target="#modalPlatino">
+  ELIGE ESTE PLAN
+</button>
+            <p class="text-light m-0">O paga <span class="fw-bold">$8.790</span>/mes</p>
+          </div>
+          <div class="modal fade" id="modalPlatino" tabindex="-1" aria-labelledby="modalPlatinoLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content contenidoModal bg-dark text-white">
+      <div class="modal-header border-secondary">
+        <h5 class="modal-title" id="modalPlatinoLabel">Platino - $72.890/año</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control bg-dark text-white border-secondary">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Apellido</label>
+            <input type="text" class="form-control bg-dark text-white border-secondary">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control bg-dark text-white border-secondary">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Código Postal</label>
+            <input type="text" class="form-control bg-dark text-white border-secondary">
+          </div>
+          <div class="mb-3">
+            <label for="tipoTarjeta" class="form-label">Tipo de Tarjeta</label>
+            <select class="form-select" id="tipoTarjeta" required>
+              <option value="" selected disabled>Selecciona una opción</option>
+              <option value="credito">Tarjeta de Crédito</option>
+              <option value="debito">Tarjeta de Débito</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="numeroTarjeta" class="form-label">Número de Tarjeta</label>
+            <input type="text" class="form-control" id="numeroTarjeta" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" required>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="fechaExp" class="form-label">Fecha de Expiración</label>
+              <input type="month" class="form-control" id="fechaExp" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cvv" placeholder="XXX" maxlength="3" required>
+            </div>
+          </div>
+          <button type="submit" class="btn botonSubscribirse w-100 fw-bold">Suscribirse</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </article>
+    </div>
+  </div>
+      </section>
     </main>
 
     <footer></footer>
