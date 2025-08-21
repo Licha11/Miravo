@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Emanuel Medina, Lisandro Araoz, Marcos Joaquin Gonzalez, Lazaro Ezequiel Diaz, Fernando Nicolás Charubi"
+    />
+    <meta
+      name="description"
+      content="Miravo: películas y series online. Tu página oficial de streaming."
+    />
+    <title>MiráVo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../Css/styles.css" />
+  </head>
+  <body>
+ <header>
+      <nav class="navbar navbar-expand-lg bg-nav d-flex navbar-fijo-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html"
+            ><img
+              src="/Img/Logo.jpeg"
+              alt="LOGO"
+              height="60"
+              class="rounded-3"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-miravo"
+            aria-controls="navbar-miravo"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-3" id="navbar-miravo">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Peliculas, series ..."
+                aria-label="Busca tus peliculas y series"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item px-3">
+                <a class="nav-link Nav-items active Nav-items-g" aria-current="page" href="/index.html"
+                  ><i class="bi bi-house-door-fill me-2"></i>Inicio</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a
+                  class="nav-link Nav-items"
+                  
+                  href="/Pages/login.html"
+                  ><i class="bi bi-box-arrow-in-right me-2"></i>Login</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link Nav-items" href="/Pages/suscripcion.html"
+                  ><i class="bi bi-plus-circle-fill me-2"></i>Suscribite</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+<!-- la clase "margin-navbar-fijo" se agrego para que el navbar fijo no tape el texto del main -->
+    <main class="margin-navbar-fijo mainBg ">
+        <section class="peliculaPrincipal">
+    <video autoplay muted loop>
+      <source src="/Img/atrapamesiPuedes.mp4" type="video/mp4">
+      Tu navegador no soporta videos HTML5.
+    </video>
+    <div class="peliculaPrincipal-content text-white">
+      <h1 class="display-4 fw-bold">Atrapame si puedes</h1>
+      <p class="lead">Un agente del FBI asume como propia la misión de capturar al astuto estafador Frank Abagnale Jr., pero Frank no solo se escapa, sino que se deleita con la persecución.</p>
+      <p class="fw-bold">Duración: 2h 15min | Clasificación: +16 | Calidad: Full HD</p>
+      <div class="d-flex gap-2 mt-3">
+        <button class="btn fw-bold px-4 Reproducir"><i class="bi bi-play-fill"><a class="linkReproducir" href="/Pages/error404.html">Reproducir</a></i></button>
+        <button class="btn btn-outline-light fw-bold px-4 miLista"><i class="bi bi-plus"><a class="linkReproducir" href="/Pages/error404.html">Mi lista</a></i></button>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container py-5">
+    <h3 class="mb-4 fw-bold display-4">Películas Relacionadas</h3>
+    <div class="row g-3 relacionadas">
+      <div class="col-12 col-md-6 col-lg-3">
+       <a href="/Pages/error404.html"><img src="/Img/cuenta.jpg" class="img-fluid" alt="Pelicula 1"></a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <a href="/Pages/error404.html"><img src="/Img/taxi.webp" class="img-fluid" alt="Pelicula 2"></a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <a href="/Pages/error404.html"><img src="/Img/sin limites.jpg" class="img-fluid" alt="Pelicula 3"></a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <a href="/Pages/error404.html"><img src="/Img/fight-club.jpg" class="img-fluid" alt="Pelicula 4"></a>
+      </div>
+       <div class="col-12 col-md-6 col-lg-3">
+        <a href="/Pages/error404.html"><img src="/Img/forrest.jpg" class="img-fluid" alt="Pelicula 5"></a>
+      </div>
+       <div class="col-12 col-md-6 col-lg-3">
+        <a href="/Pages/error404.html"><img src="/Img/ice cube.jpg" class="img-fluid" alt="Pelicula 6"></a>
+      </div>
+       <div class="col-12 col-md-6 col-lg-3">
+        <a href="/Pages/error404.html"><img src="/Img/inception.png" class="img-fluid" alt="Pelicula 7"></a>
+      </div>
+       <div class="col-12 col-md-6 col-lg-3">
+        <a href="/Pages/error404.html"><img src="/Img/interestellar.jpg" class="img-fluid" alt="Pelicula 8"></a>
+      </div>
+       <div class="col-12 col-md-6 col-lg-3">
+        <a href="/Pages/error404.html"><img src="/Img/scarface.jpg" class="img-fluid" alt="Pelicula 9"></a>
+      </div>
+       <div class="col-12 col-md-6 col-lg-3">
+        <a href="/Pages/error404.html"><img src="/Img/la-terminal.jpg" class="img-fluid" alt="Pelicula 10"></a>
+      </div>
+       <div class="col-12 col-md-6 col-lg-3">
+        <a href="/Pages/error404.html"><img src="/Img/mas alla de los sueños.jpg" class="img-fluid" alt="Pelicula 11"></a>
+      </div>
+       <div class="col-12 col-md-6 col-lg-3">
+        <a href="/Pages/error404.html"><img src="/Img/mente.jpg" class="img-fluid" alt="Pelicula 12"></a>
+      </div>
+    </div>
+  </div>
+   </section>
+    </main>
+      <footer class="footerBg p-3">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="text-center my-3">
+            <img
+              src="/Img/Logo.jpeg"
+              alt="logo streaming"
+              class="logoFooter rounded-3"
+            />
+          </div>
+          <div class="col-md-6 col-lg-3 my-3">
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="/Pages/contacto.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                >
+                  Contáctanos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                  >Cuentas</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                >
+                  Formas de ver</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                >
+                  Privacidad</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                >
+                  Aviso legal</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 my-3">
+            <ul class="list-unstyled">
+                            <li>
+                <a
+                  href="/Pages/nosotros.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                  >Acerca de nosotros</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                  >Prueba de velocidad</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                  >Solo en Miravo</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                >
+                  Centro de ayuda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                >
+                  Prensa</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 my-3">
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                  >Empleo</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                  >Término de uso</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                  >Preferencia de cookies</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                  >Preguntas frecuentes</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                >
+                  Aviso legales</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 d-flex gap-5 justify-content-center m">
+            <a href="/Pages/error404.html"><i class="bi bi-instagram text-light"></i></a>
+            <a href="/Pages/error404.html"><i class="bi bi-twitter-x text-light"></i></a>
+            <a href="/Pages/error404.html"><i class="bi bi-tiktok text-light"></i></a>
+            <a href="/Pages/error404.html"><i class="bi bi-facebook text-light"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
