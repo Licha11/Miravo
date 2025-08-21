@@ -71,6 +71,9 @@
 /* SUSCRIPCION */
 .fondoPlan {
   background-image: url(/Img/pelis.jpg);
+      color: #fff;
+      height: 100vh;
+      background-size: cover;
 }
 
 .seriesPlanes{
@@ -227,6 +230,11 @@
     .relacionadas img {
       transition: transform 0.3s ease;
       border-radius: 6px;
+      width: 100%;
+      height: 350px; /* Ajusta el alto que quieras */
+      object-fit: cover;
+      border-radius: 6px;
+      transition: transform 0.3s ease;
     }
     .relacionadas img:hover {
       transform: scale(1.05);
@@ -247,11 +255,8 @@
       background-color: darkgray;
       transform: scale(1.05);
     }
-    .relacionadas img {
-      transition: transform 0.3s ease;
-      border-radius: 6px;
-    }
-    .relacionadas img:hover {
-      transform: scale(1.05);
+    .linkReproducir {
+      text-decoration: none;
+      color: white;
     }
 /* TERMINA DETALLE DE PELICULA */
