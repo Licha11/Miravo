@@ -1,22 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-</head>
-<body>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content=" Lisandro Araoz, Marcos Joaquin Gonzalez, Lazaro Ezequiel Diaz, Fernando Nicolás Charubi"
+    />
+    <meta
+      name="description"
+      content="Miravo: películas y series online. Tu página oficial de streaming."
+    />
+    <title>MiráVo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/Css/styles.css">
+  </head>
+  <body>
     <header>
-
+      <nav class="navbar navbar-expand-lg bg-nav d-flex navbar-fijo-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html"
+            ><img
+              src="/Img/Logo.jpeg"
+              alt="LOGO"
+              height="60"
+              class="rounded-3"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-miravo"
+            aria-controls="navbar-miravo"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-3" id="navbar-miravo">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Peliculas, series ..."
+                aria-label="Busca tus peliculas y series"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item px-3">
+                <a class="nav-link Nav-items active Nav-items-g" aria-current="page" href="./index.html"
+                  ><i class="bi bi-house-door-fill me-2"></i>Inicio</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a
+                  class="nav-link Nav-items"
+                  
+                  href="/Pages/login.html"
+                  ><i class="bi bi-box-arrow-in-right me-2"></i>Login</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link Nav-items" href="/Pages/suscripcion.html"
+                  ><i class="bi bi-plus-circle-fill me-2"></i>Suscribite</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main class="mainBg">
-        <section class="Serievideo">
+      <section class="Serievideo">
     <video autoplay muted loop>
-      <source src="/Breaking Bad Trailer (Season 1).mp4" type="video/mp4">
+      <source src="/Img/Breaking Bad Trailer (Season 1).mp4" type="video/mp4">
       Tu navegador no soporta videos HTML5.
     </video>
 
@@ -25,132 +95,272 @@
       <p class="lead">Sigue la transformación de Walter White, un profesor de química con cáncer terminal, que se asocia con su exalumno Jesse Pinkman para fabricar y vender metanfetaminas. Lo que comienza como un intento desesperado por asegurar el futuro de su familia se convierte en un oscuro viaje de poder, peligro y moralidad.</p>
       <p class="fw-bold">Temporadas: 5 | Género: Drama, Crimen, Drogas | Clasificación: +16 | Calidad: Full HD</p>
       <div class="d-flex gap-2 mt-3">
-        <button class="btn btn-red fw-bold px-4 Reproducir"><i class="bi bi-play-fill"><a class="linkReproducir" href="">Reproducir</a></i></button>
-        <button class="btn btn-outline-light fw-bold px-4 miLista"><i class="bi bi-plus"><a class="linkReproducir" href="">Mi lista</a></i></button>
+        <button class="btn btn-red fw-bold px-4 Reproducir"><i class="bi bi-play-fill"><a class="linkReproducir" href="/Pages/error404.html">Reproducir</a></i></button>
+        <button class="btn btn-outline-light fw-bold px-4 miLista"><i class="bi bi-plus"><a class="linkReproducir" href="/Pages/error404.html">Mi lista</a></i></button>
       </div>
     </div>
   </section>
-
-  <!-- Lista de capítulos -->
    <section class="container py-5">
     <h3 class="mb-4 fw-bold display-4">Capítulos</h3>
     <h5 class="mb-4 fw-bold">Temporada 1</h5>
     <div class="row g-3">
       <div class="col-12 col-md-6">
         <div class="episode-card">
-          <img src="/primer cap.webp" alt="Capítulo 1">
+          <img src="/Img/primer cap.webp" alt="Capítulo 1">
           <div class="card-body">
-            <a class="linkReproducir" href=""><h5 class="fw-bold mb-1">Capítulo 1: Principio del fin</h5></a>
+            <a class="linkReproducir" href="/Pages/error404.html"><h5 class="fw-bold mb-1">Capítulo 1: Principio del fin</h5></a>
             <p>Duración: 58 min</p>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-6">
         <div class="episode-card">
-          <img src="/segundo episodio.webp" alt="Capítulo 2">
+          <img src="/Img/segundo episodio.webp" alt="Capítulo 2">
           <div class="card-body">
-            <a class="linkReproducir" href=""><h5 class="fw-bold mb-1">Capítulo 2: El gato en la bolsa</h5></a>
+            <a class="linkReproducir" href="/Pages/error404.html"><h5 class="fw-bold mb-1">Capítulo 2: El gato en la bolsa</h5></a>
             <p>Duración: 48 min</p>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-6">
         <div class="episode-card">
-          <img src="/3er cap.webp" alt="Capítulo 3">
+          <img src="/Img/3er cap.webp" alt="Capítulo 3">
           <div class="card-body">
-            <a class="linkReproducir" href=""><h5 class="fw-bold mb-1">Capítulo 3: Y la bolsa en el rio</h5></a>
+            <a class="linkReproducir" href="/Pages/error404.html"><h5 class="fw-bold mb-1">Capítulo 3: Y la bolsa en el rio</h5></a>
             <p>Duración: 48 min</p>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-6">
         <div class="episode-card">
-          <img src="/4 cap.webp" alt="Capítulo 4">
+          <img src="/Img/4 cap.webp" alt="Capítulo 4">
           <div class="card-body">
-           <a class="linkReproducir" href=""> <h5 class="fw-bold mb-1">Capítulo 4: Cancer</h5></a>
+           <a class="linkReproducir" href="/Pages/error404.html"> <h5 class="fw-bold mb-1">Capítulo 4: Cancer</h5></a>
             <p>Duración: 48 min</p>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-6">
         <div class="episode-card">
-          <img src="/5cap.webp" alt="Capítulo 5">
+          <img src="/Img/5cap.webp" alt="Capítulo 5">
           <div class="card-body">
-            <a class="linkReproducir" href=""><h5 class="fw-bold mb-1">Capítulo 5: Materia gris</h5></a>
+            <a class="linkReproducir" href="/Pages/error404.html"><h5 class="fw-bold mb-1">Capítulo 5: Materia gris</h5></a>
             <p>Duración: 48 min</p>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-6">
         <div class="episode-card">
-          <img src="/6cap.webp" alt="Capítulo 6">
+          <img src="/Img/6cap.webp" alt="Capítulo 6">
           <div class="card-body">
-            <a class="linkReproducir" href=""><h5 class="fw-bold mb-1">Capítulo 6: Un loco puñado de nada</h5></a>
+            <a class="linkReproducir" href="/Pages/error404.html"><h5 class="fw-bold mb-1">Capítulo 6: Un loco puñado de nada</h5></a>
             <p>Duración: 48 min</p>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-6">
         <div class="episode-card">
-          <img src="/7cap.webp" alt="Capítulo 7">
+          <img src="/Img/7cap.webp" alt="Capítulo 7">
           <div class="card-body">
-            <a class="linkReproducir" href=""><h5 class="fw-bold mb-1">Capítulo 7: Acuerdo no violento</h5></a>
+            <a class="linkReproducir" href="/Pages/error404.html"><h5 class="fw-bold mb-1">Capítulo 7: Acuerdo no violento</h5></a>
             <p>Duración: 48 min</p>
           </div>
         </div>
       </div>
     </div>
 </section>
-    
-  
-
-  <!-- Series/Películas relacionadas -->
    <section class="container pb-5"><h3 class="mb-4 fw-bold">Te puede interesar</h3>
     <div class="row g-3 relacionadas">
       <div class="col-12 col-md-6 col-lg-3">
-        <a href=""><img src="/peaky.webp" class="img-fluid" alt="Relacionada 1"></a>
+        <a href="/Pages/error404.html"><img src="/Img/peaky.webp" class="img-fluid" alt="Relacionada 1"></a>
       </div>
       <div class="col-12 col-md-6 col-lg-3">
-        <a href=""><img src="/prision.jpg" class="img-fluid" alt="Relacionada 2"></a>
+        <a href="/Pages/error404.html"><img src="/Img/prision.jpg" class="img-fluid" alt="Relacionada 2"></a>
       </div>
       <div class="col-12 col-md-6 col-lg-3">
-        <a href=""><img src="/stranger.webp" class="img-fluid" alt="Relacionada 3"></a>
+        <a href="/Pages/error404.html"><img src="/Img/stranger.webp" class="img-fluid" alt="Relacionada 3"></a>
       </div>
       <div class="col-12 col-md-6 col-lg-3">
-        <a href=""><img src="/simuladores.jpg" class="img-fluid" alt="Relacionada 4"></a>
+        <a href="/Pages/error404.html"><img src="/Img/simuladores.jpg" class="img-fluid" alt="Relacionada 4"></a>
       </div>
       <div class="col-12 col-md-6 col-lg-3">
-        <a href=""><img src="/rick and morty.jpg" class="img-fluid" alt="Relacionada 5"></a>
+        <a href="/Pages/error404.html"><img src="/Img/rick and morty.jpg" class="img-fluid" alt="Relacionada 5"></a>
       </div>
       <div class="col-12 col-md-6 col-lg-3">
-        <a href=""><img src="/chernobyl.jpg" class="img-fluid" alt="Relacionada 6"></a>
+        <a href="/Pages/error404.html"><img src="/Img/chernobyl.jpg" class="img-fluid" alt="Relacionada 6"></a>
       </div>
       <div class="col-12 col-md-6 col-lg-3">
-       <a href=""> <img src="/vikingos.jpg" class="img-fluid" alt="Relacionada 7"></a>
+       <a href="/Pages/error404.html"> <img src="/Img/vikingos.jpg" class="img-fluid" alt="Relacionada 7"></a>
       </div>
       <div class="col-12 col-md-6 col-lg-3">
-        <a href=""><img src="/walking dead.jpg" class="img-fluid" alt="Relacionada 8"></a>
+        <a href="/Pages/error404.html"><img src="/Img/walking dead.jpg" class="img-fluid" alt="Relacionada 8"></a>
       </div>
       <div class="col-12 col-md-6 col-lg-3">
-        <a href=""><img src="/southpark.jpg" class="img-fluid" alt="Relacionada 9"></a>
+        <a href="/Pages/error404.html"><img src="/Img/southpark.jpg" class="img-fluid" alt="Relacionada 9"></a>
       </div>
       <div class="col-12 col-md-6 col-lg-3">
-       <a href=""> <img src="/juegosdetronos.jpg" class="img-fluid" alt="Relacionada 10"></a>
+       <a href="/Pages/error404.html"> <img src="/Img/juegosdetronos.jpg" class="img-fluid" alt="Relacionada 10"></a>
       </div>
       <div class="col-12 col-md-6 col-lg-3">
-        <a href=""><img src="/squidgames.jpg" class="img-fluid" alt="Relacionada 11"></a>
+        <a href="/Pages/error404.html"><img src="/Img/squidgames.jpg" class="img-fluid" alt="Relacionada 11"></a>
       </div>
       <div class="col-12 col-md-6 col-lg-3">
-        <a href=""><img src="/dahmer.jpg" class="img-fluid" alt="Relacionada 12"></a>
+        <a href="/Pages/error404.html"><img src="/Img/dahmer.jpg" class="img-fluid" alt="Relacionada 12"></a>
       </div>
     </div>
 </section>
 
 
     </main>
-    <footer>
 
+    <footer class="footerBg p-3">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="text-center my-3">
+            <img
+              src="/Img/Logo.jpeg"
+              alt="logo streaming"
+              class="logoFooter rounded-3"
+            />
+          </div>
+          <div class="col-md-6 col-lg-3 my-3">
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="/Pages/contacto.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                >
+                  Contáctanos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                  >Cuentas</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                >
+                  Formas de ver</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                >
+                  Privacidad</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                >
+                  Aviso legal</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 my-3">
+            <ul class="list-unstyled">
+                            <li>
+                <a
+                  href="/Pages/nosotros.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                  >Acerca de nosotros</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                  >Prueba de velocidad</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                  >Solo en Miravo</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                >
+                  Centro de ayuda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                >
+                  Prensa</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 my-3">
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                  >Empleo</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                  >Término de uso</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                  >Preferencia de cookies</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                  >Preguntas frecuentes</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Pages/error404.html"
+                  class="link-secondary link-underline-opacity-25 link-underline-opacity-100"
+                >
+                  Aviso legales</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 d-flex gap-5 justify-content-center m">
+            <a href="/Pages/error404.html"><i class="bi bi-instagram text-light"></i></a>
+            <a href="/Pages/error404.html"><i class="bi bi-twitter-x text-light"></i></a>
+            <a href="/Pages/error404.html"><i class="bi bi-tiktok text-light"></i></a>
+            <a href="/Pages/error404.html"><i class="bi bi-facebook text-light"></i></a>
+          </div>
+        </div>
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
